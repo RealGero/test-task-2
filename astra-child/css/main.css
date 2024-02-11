@@ -1,0 +1,63 @@
+
+.container{
+    padding: 20px;
+}
+#page{
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+.blog h2, .blog h3 {
+    text-align: center;
+}
+.blog h3{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.blog h2{
+    font-weight: bold;
+}
+.upcoming-events .article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.article-container{
+    margin-bottom: 15px;
+}
+.upcoming-events{
+    margin-bottom: 100px;
+}
+.thumbnail{
+    text-align: center;
+}
+.health-and-fitness-posts .article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.post-item{
+    margin: 0 20px;
+    
+}
+img{
+    width: 80%;
+}
+
+@media (max-width:1280px) {
+    .health-and-fitness-posts .article-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:1024px) {
+    .health-and-fitness-posts .article-container {
+        grid-template-columns: 1fr;
+    }
+    .upcoming-events .article-container {
+        grid-template-columns: 1fr;
+    }
+    .post-item{
+        margin: 20px 0px;
+    }
+}
